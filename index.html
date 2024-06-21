@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マグロのトロ：至高の寿司ネタ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Serif JP', serif;
+            background-color: #111;
+            color: #f0f0f0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23222' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(45deg, #4a0000, #800000);
+            color: #f0f0f0;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 5px 10px;
+        }
+        nav ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        .hero {
+            position: relative;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #000;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+        .hero-content {
+            position: absolute;
+            z-index: 2;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            color: #f0f0f0;
+        }
+        .hero h2 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.05);
+            margin: 20px;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        section::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px solid #4a0000;
+            border-radius: 3px;
+            pointer-events: none;
+        }
+        h2 {
+            color: #ffd700;
+            border-bottom: 2px solid #4a0000;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .feature-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #ffd700;
+        }
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #000;
+            color: #f0f0f0;
+            position: relative;
+        }
+        footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23222' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.1;
+        }
+        @media (min-width: 768px) {
+            .container {
+                max-width: 750px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>マグロのトロ：至高の寿司ネタ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">トロの魅力</a></li>
+                    <li><a href="#features">特徴</a></li>
+                    <li><a href="#experience">食べた人の感想</a></li>
+                    <li><a href="#fishing-ports">有名な漁港</a></li>
+                    <li><a href="#issues">資源問題</a></li>
+                    <li><a href="#trend">トレンド</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="hero">
+            <img src="https://newsatcl-pctr.c.yimg.jp/t/iwiz-yn/rpr/toryu/01665193/title-1707700455348.jpeg?exp=10800&fmt=webp" alt="マグロのトロの寿司" class="hero-image">
+            <div class="hero-content">
+                <h2>極上のトロ、極上の体験</h2>
+                <p>口の中でとろける至高の味わい</p>
+            </div>
+        </div>
+
+        <section id="intro">
+            <h2>トロの魅力</h2>
+            <p>マグロのトロは、多くの寿司愛好家に人気の高いネタです。その濃厚な味わい、独特の食感、美しい見た目が多くの人々を魅了し続けています。</p>
+            <div class="image-container">
+                <img src="https://gourmet.cmosite.com/wp-content/uploads/sites/398/2021/04/test-8.jpg" alt="マグロのトロの寿司">
+                <p>鮮やかなピンク色と艶やかな質感は、トロの美味しさを視覚的に物語っています。</p>
+            </div>
+        </section>
+        
+        <section id="features">
+            <h2>トロの特徴</h2>
+            <ul class="feature-list">
+                <li><strong>濃厚な味わい：</strong>脂肪分が多く、口の中でとろけるような濃厚さが特徴です。</li>
+                <li><strong>独特の食感：</strong>やわらかく滑らかな食感が、他の寿司ネタとは一線を画しています。</li>
+                <li><strong>美しい見た目：</strong>鮮やかなピンク色と、脂の白い筋が入った大理石のような外観が食欲をそそります。</li>
+            </ul>
+            <div class="image-container">
+                <img src="https://i.pinimg.com/736x/04/f5/e8/04f5e8b049845c640527ae635f89cb1d.jpg" alt="トロの断面">
+                <p>トロの断面に見られる美しい霜降りは、その濃厚な味わいを予感させます。</p>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2>食べた人の感想</h2>
+            <p>「口に入れた瞬間、とろけるような食感と濃厚な旨味が広がり、言葉を失いました。まるで舌の上で踊っているかのような、贅沢な味わいでした。」 - 寿司愛好家 田中さん</p>
+            <p>「一度食べたら忘れられない味です。他の寿司ネタとは比較にならないほどの満足感がありました。」 - グルメライター 佐藤さん</p>
+            <div class="image-container">
+                <img src="https://d35omnrtvqomev.cloudfront.net/photo/article/article_part/image_path_1/426186/44910945f67578b3fac23387051647.jpg" alt="トロを食べる人">
+                <p>トロを口にした瞬間の幸せそうな表情が、その美味しさを物語っています。</p>
+            </div>
+        </section>
+
+        <section id="fishing-ports">
+            <h2>有名な漁港</h2>
+            <p>日本国内では、以下の漁港がマグロの水揚げで有名です：</p>
+            <ul class="feature-list">
+                <li>三陸沖（岩手県大船渡市）</li>
+                <li>焼津港（静岡県焼津市）</li>
+                <li>気仙沼港（宮城県気仙沼市）</li>
+                <li>那智勝浦港（和歌山県那智勝浦町）</li>
+            </ul>
+            <div class="image-container">
+                <img src="https://staticx.antenna.jp/article_images/23048699_wide_39ab0942-d33d-4cfc-90f7-8bd8295fda64_.jpeg" alt="寿司職人">
+                <p>熟練の寿司職人たちが、各地の漁港から届く新鮮なマグロを巧みな技で寿司に仕立て上げています。</p>
+            </div>
+        </section>
+
+        <section id="issues">
+            <h2>資源問題</h2>
+            <p>近年、中国を含む複数の国による乱獲により、マグロの漁獲量に深刻な影響が出ています。国際的な規制強化が求められていますが、違法操業の取り締まりは困難を極めています。持続可能な漁業の実現に向けて、国際社会全体での取り組みが急務となっています。</p>
+            <div class="image-container">
+                <img src="https://www.newsweekjapan.jp/stories/assets_c/2020/09/newsweek_20200911_154437-thumb-720x477-214297.jpg" alt="マグロ漁の様子">
+                <p>マグロ漁の様子。持続可能な漁業のために、適切な管理と規制が必要です。</p>
+            </div>
+        </section>
+
+        <section id="trend">
+            <h2>トレンド：港区女子とトロ</h2>
+            <p>近年、いわゆる「港区女子」の間でトロを含む高級寿司が人気です。しかし、中には寿司への理解やリスペクトが低く、SNSへの投稿目的で来店する人も。本来の寿司文化の理解と尊重が求められています。</p>
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiurFW0O_KsGY7c8Z0anTL9qz-5Vfst-LlIQ&s" alt="港区女子">
+                <p>SNS映えを重視する傾向が見られますが、寿司本来の味わいや文化的価値にも目を向けることが大切です。</p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 マグロのトロ：至高の寿司ネタ. All rights reserved.</p>
+            <p>連絡先: info@toro-sushi.com</p>
+        </footer>
